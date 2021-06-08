@@ -18,7 +18,7 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
         textview_first.text = when (state) {
             State.ALABAMA -> State.ALABAMA.name
             State.COLORADO -> State.COLORADO.postalCode
-            State.WEST_VIRGINIA -> State.WEST_VIRGINIA.name
+            State.WEST_VIRGINIA -> State.WEST_VIRGINIA.displayName
             else -> "aint no state"
         }
 
