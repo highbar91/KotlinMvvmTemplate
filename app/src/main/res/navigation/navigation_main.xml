@@ -3,29 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_navigation"
-    app:startDestination="@id/first_fragment">
+    app:startDestination="@id/login_fragment">
 
     <fragment
-        android:id="@+id/first_fragment"
+        android:id="@+id/login_fragment"
         android:name="com.ashtoncoulson.kotlinmvvmtemplate.fragment.LoginFragment"
-        android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_login">
 
         <action
-            android:id="@+id/action_first_fragment_to_second_fragment"
-            app:destination="@id/second_fragment" />
+            android:id="@+id/action_login_to_dashboard"
+            app:destination="@id/dashboard_fragment" />
 
     </fragment>
 
     <fragment
-        android:id="@+id/second_fragment"
+        android:id="@+id/dashboard_fragment"
         android:name="com.ashtoncoulson.kotlinmvvmtemplate.fragment.DashboardFragment"
-        android:label="@string/second_fragment_label"
+        android:label="@string/dashboard_fragment_label"
         tools:layout="@layout/fragment_dashboard">
 
         <action
             android:id="@+id/action_second_fragment_to_first_fragment"
-            app:destination="@id/first_fragment" />
+            app:destination="@id/login_fragment" />
 
     </fragment>
 

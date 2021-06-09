@@ -1,13 +1,20 @@
 <resources>
+
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
-        <item name="toolbarStyle">@style/ToolbarTheme</item>
+        <item name="materialButtonStyle">@style/ButtonStyle</item>
+        <item name="textInputStyle">@style/TextInputStyle</item>
+        <item name="toolbarStyle">@style/ToolbarStyle</item>
         <item name="android:textColorSecondary">?attr/colorOnPrimary</item> //Used for toolbar overflow icon
     </style>
 
-    <style name="ToolbarTheme" parent="Widget.MaterialComponents.Toolbar.Primary"/>
+    <style name="ButtonStyle" parent="Widget.MaterialComponents.Button"/>
+
+    <style name="TextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
+
+    <style name="ToolbarStyle" parent="Widget.MaterialComponents.Toolbar.Primary"/>
 
 </resources>
