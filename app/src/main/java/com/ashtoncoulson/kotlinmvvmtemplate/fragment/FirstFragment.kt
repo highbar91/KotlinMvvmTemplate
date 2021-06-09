@@ -23,7 +23,7 @@ class FirstFragment : Fragment(R.layout.fragment_first) {
         }
 
         button_first.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
+            findNavController().navigate(R.id.action_first_fragment_to_second_fragment)
         }
     }
 }
