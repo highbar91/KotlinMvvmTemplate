@@ -6,12 +6,13 @@ import android.view.View
 import androidx.navigation.fragment.findNavController
 import com.ashtoncoulson.kotlinmvvmtemplate.R
 import com.ashtoncoulson.kotlinmvvmtemplate.model.State
-import kotlinx.android.synthetic.main.fragment_first.*
+import kotlinx.android.synthetic.main.fragment_login.*
 
-class FirstFragment : Fragment(R.layout.fragment_first) {
+class LoginFragment : Fragment(R.layout.fragment_login) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        hideActionBar()
 
         val state = State.WEST_VIRGINIA
 

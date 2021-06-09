@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/first_fragment"
-        android:name="com.ashtoncoulson.kotlinmvvmtemplate.fragment.FirstFragment"
+        android:name="com.ashtoncoulson.kotlinmvvmtemplate.fragment.LoginFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/fragment_login">
 
         <action
             android:id="@+id/action_first_fragment_to_second_fragment"
@@ -19,9 +19,9 @@
 
     <fragment
         android:id="@+id/second_fragment"
-        android:name="com.ashtoncoulson.kotlinmvvmtemplate.fragment.SecondFragment"
+        android:name="com.ashtoncoulson.kotlinmvvmtemplate.fragment.DashboardFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/fragment_dashboard">
 
         <action
             android:id="@+id/action_second_fragment_to_first_fragment"
